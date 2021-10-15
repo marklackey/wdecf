@@ -19,7 +19,8 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 0px;
-    font-size: xx-large;
+    font-size: 200%;
+    font-family: monospace;
 }
 
 p {
@@ -31,6 +32,10 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    filter: brightness(70%);
 }
 
 button {
