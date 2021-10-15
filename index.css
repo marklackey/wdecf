@@ -1,10 +1,31 @@
+body,
+html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url(./eel2.webp);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
     width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0px;
-    background-image: url(./eel2.webp);
-    background-size: cover;
+    font-size: xx-large;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
 }
 
 a {
@@ -79,7 +100,8 @@ button {
     }
 }
 
-@media screen and (orientation: portrait) {
+
+/* @media screen and (orientation: portrait) {
     html {
         transform: rotate(-90deg);
         transform-origin: left top;
@@ -90,4 +112,4 @@ button {
         top: 100%;
         left: 0;
     }
-}
+} */
