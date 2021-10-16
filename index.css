@@ -113,6 +113,7 @@ a:hover {
 
 @media (max-width: 600px) {
     .external-content {
+        position: relative;
         row-gap: 1rem;
     }
     .external-content>div {
