@@ -21,9 +21,14 @@ function addNextLetter(index) {
     if (index == 0) {
         maxSpeed = getRandomInt(ABSOLUTE_MAX);
         spanId++;
-        document.getElementById("eels").innerHTML += `<span id="${spanId}"
-          style="color:hsla(${hue},100%, ${getRandomInt(50)+50}%, 0.8);"> </a>`;
-        document.getElementById(spanId).style.marginLeft = `${getRandomInt(10)}rem`;
+
+        const newSpan = document.createElement('span');
+        newSpan.id = `${spanId}`;
+        newSpan.style.marginLeft = `${getRandomInt(10)}rem`;
+        newSpan.style.color = `hsla(${hue},100%, ${getRandomInt(50)+50}%, 0.8)`;
+
+        document.getElementById("eels").append(newSpan);
+
     }
     document.getElementById(spanId).innerHTML = `${document.getElementById(spanId).innerHTML}${eelText[index]}`;
     index++;
