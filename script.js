@@ -1,6 +1,6 @@
 let maxSpeed;
 let fps;
-const ABSOLUTE_MAX = 100;
+const ABSOLUTE_MAX = 500;
 const eelText = "Where do eels come from? ";
 let index = 0;
 let hue = 0;
@@ -21,8 +21,7 @@ function addNextLetter(index) {
     if (index == 0) {
         maxSpeed = getRandomInt(ABSOLUTE_MAX);
         spanId++;
-        document.getElementById("eels").innerHTML += `<a href="https://www.ted.com/talks/lucy_cooke_no_one_can_figure_out_how_eels_have_sex"
-        data-goatcounter-click="link-to-ted-talk" id="${spanId}"
+        document.getElementById("eels").innerHTML += `<span id="${spanId}"
           style="color:hsla(${hue},100%, ${getRandomInt(50)+50}%, 0.8);"> </a>`;
         document.getElementById(spanId).style.marginLeft = `${getRandomInt(10)}rem`;
     }
