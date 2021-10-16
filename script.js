@@ -6,7 +6,6 @@ let index = 0;
 let hue = 0;
 let spanId = 0;
 
-
 function addNextLetter(index) {
     if (index == eelText.length) {
         const choice = getRandomInt(15);

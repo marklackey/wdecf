@@ -49,11 +49,22 @@ a:hover {
 }
 
 .external-content {
-    /* opacity: .9; */
     z-index: 2;
     display: flex;
     justify-content: center;
     column-gap: 3vw;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .external-content>div {
@@ -65,6 +76,7 @@ a:hover {
 
 .new-yorker {
     background-color: antiquewhite;
+    animation: fadein 8s;
 }
 
 .new-yorker img {
@@ -80,6 +92,7 @@ a:hover {
 }
 
 .youtube {
+    animation: fadein 10s;
     display: flex;
     flex-direction: column;
     justify-content: center;
