@@ -4,7 +4,6 @@ const ABSOLUTE_MAX = 500;
 const eelText = "Where do eels come from?";
 let index = 0;
 let hue = 0;
-let spanId = 0;
 
 function addNextLetter(index) {
     if (index == eelText.length) {
@@ -28,6 +27,20 @@ function addNextLetter(index) {
         newSpan.style.fontSize = `${Math.random() * 2 +1}rem`;
 
         document.getElementById("eels").append(newSpan);
+
+        // console.log(newSpan.offsetTop + newSpan.offsetHeight);
+        // console.log(window.innerHeight);
+        if (newSpan.offsetTop > window.innerHeight) {
+            // var youtube = document.getElementById("youtube");
+            // var newone = youtube.cloneNode(true);
+            // youtube.parentNode.replaceChild(newone, youtube);
+            // var ny = document.getElementById("new-yorker");
+            // newone = ny.cloneNode(true);
+            // ny.parentNode.replaceChild(newone, ny);
+            document.getElementById("eels").innerHTML = "";
+            addNextLetter(index);
+            return;
+        }
 
     }
     document.getElementById("eels").lastChild.innerHTML += eelText[index];

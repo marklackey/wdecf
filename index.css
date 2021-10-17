@@ -76,24 +76,24 @@ a:hover img {
     min-width: 560px;
 }
 
-.new-yorker {
+#new-yorker {
     background-color: antiquewhite;
     animation: fadein 8s;
 }
 
-.new-yorker img {
+#new-yorker img {
     width: 100%;
     max-width: 560px;
 }
 
-.youtube iframe {
+#youtube iframe {
     width: 100%;
     height: 100%;
     max-width: 560px;
     max-height: 315px;
 }
 
-.youtube {
+#youtube {
     animation: fadein 10s;
     display: flex;
     justify-content: center;
@@ -113,17 +113,17 @@ a:hover img {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .youtube {
+    #youtube {
         flex-direction: column;
     }
 }
 
 @media (min-width: 601px) {
-    .new-yorker {
+    #new-yorker {
         border-radius: 25px;
         overflow: hidden;
     }
-    .youtube iframe {
+    #youtube iframe {
         min-height: 315px;
     }
     #eels {
@@ -143,7 +143,7 @@ a:hover img {
         min-width: 0;
         padding: 0;
     }
-    .youtube iframe {
+    #youtube iframe {
         min-height: 56vw;
     }
     .new-yorker-title {
