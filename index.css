@@ -4,11 +4,7 @@ html {
 }
 
 .bg {
-    /* The image used */
     background-image: url(./eel2.webp);
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
     background-position: left;
     background-repeat: repeat-y;
     background-size: cover;
@@ -45,7 +41,11 @@ a {
 }
 
 a:hover {
-    filter: brightness(70%);
+    color: gray;
+}
+
+a:hover img {
+    filter: brightness(80%)
 }
 
 .external-content {
@@ -53,6 +53,7 @@ a:hover {
     display: flex;
     justify-content: center;
     column-gap: 3vw;
+    position: relative;
 }
 
 @keyframes fadein {
@@ -94,7 +95,6 @@ a:hover {
 .youtube {
     animation: fadein 10s;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -105,13 +105,19 @@ a:hover {
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 601px) and (min-height: 800px) {
     .external-content {
-        position: fixed;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .youtube {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 601px) {
     .new-yorker {
         border-radius: 25px;
         overflow: hidden;
@@ -135,7 +141,6 @@ a:hover {
     .external-content>div {
         min-width: 0;
         padding: 0;
-        /* margin-top: 1rem; */
     }
     .youtube iframe {
         min-height: 56vw;
