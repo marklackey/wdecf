@@ -105,7 +105,7 @@ a:hover img {
     }
 }
 
-@media (min-width: 601px) and (min-height: 800px) {
+@media (min-width: 601px) and (min-height: 600px) {
     .external-content {
         position: absolute;
         top: 50%;
